@@ -1,7 +1,12 @@
-* A simple example of client side validation with reflex
-To build the demo:
+
+This is just a template project for building programs with GHCJS + STACK
+
+To build :
+
 - Clone this repo
 - =stack build gtk2hs-buildtools=
-- Iy the meantime, be sure to have the required system libraries (like webkitgtk). If you miss some of the libraries, they will pop up as error in the next step.
-- =stack build=
-- =stack exec userValidation=
+- =stack build --stack-yaml=stack-ghcjs.yaml --install-ghc=
+
+Note: if you get any error concerning a =/root/.local/bin= being inaccessible
+while building =StateVar= then you should change permissions of that directory
+(and create it if it does not exist).
