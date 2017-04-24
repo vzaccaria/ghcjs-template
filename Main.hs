@@ -6,6 +6,7 @@ module Main where
 import ClassyPrelude
 import Reflex
 import Reflex.Dom
+import Language.Javascript.JSaddle
 import Language.Javascript.JSaddle.Warp (run)
 
 import Data.String.Conv    (toS)
