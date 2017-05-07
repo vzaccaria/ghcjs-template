@@ -1,4 +1,6 @@
 
+* What is this
+
 This is just a template project for building programs with GHCJS + STACK
 
 To build :
@@ -10,3 +12,15 @@ To build :
 Note: if you get any error concerning a =/root/.local/bin= being inaccessible
 while building =StateVar= then you should change permissions of that directory
 (and create it if it does not exist).
+
+The cabal file is starterApp.cabal. It compiles Main.hs into a Javascript file.
+
+* How to compile
+
+To compile Main.hs:
+#+BEGIN_SRC sh     :results none   
+stack build 
+#+END_SRC
+
+
+
