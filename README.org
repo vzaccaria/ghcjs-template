@@ -6,8 +6,8 @@ This is just a template project for building programs with GHCJS + STACK
 To build :
 
 - Clone this repo
-- =stack build gtk2hs-buildtools --stack-yaml=stack-prebuild.yaml=
-- =stack build --install-ghc=
+- =stack build gtk2hs-buildtools=
+- =stack build --install-ghc --stack-yaml=stack-ghcjs.yaml=
 
 Note: if you get any error concerning a =/root/.local/bin= being inaccessible
 while building =StateVar= then you should change permissions of that directory
@@ -19,7 +19,7 @@ The cabal file is starterApp.cabal. It compiles Main.hs into a Javascript file.
 
 To compile Main.hs:
 #+BEGIN_SRC sh     :results none   
-stack build 
+stack build --stack-yaml=stack-ghcjs.yaml
 #+END_SRC
 
 
